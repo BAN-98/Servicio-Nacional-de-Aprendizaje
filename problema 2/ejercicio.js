@@ -3,10 +3,10 @@
 let edades = [];
 
 for (let i = 0; i < 10; i++) {
-  let edad = prompt(`Ingrese la edad de la persona ${i + 1}: `);
+  let edad = prompt('Ingrese la edad de la persona'+ i + 1 );
 
   while (isNaN(edad) || parseInt(edad) < 1 || parseInt(edad) > 120) {
-    edad = prompt(`Ingrese una edad válida para la persona ${i + 1}: `);
+    edad = prompt('Ingrese una edad válida para la persona '+ i + 1);
   }
 
   edades.push(parseInt(edad));
@@ -43,10 +43,10 @@ for (let i = 0; i < edades.length; i++) {
 
 let promedio_edades = suma_edades / edades.length;
 
-console.log(`Menores de edad: ${menores_de_edad}`);
-console.log(`Mayores de edad: ${mayores_de_edad}`);
-console.log(`Adultos mayores: ${adultos_mayores}`);
-console.log(`Edad más baja: ${edad_mas_baja}`);
-console.log(`Edad más alta: ${edad_mas_alta}`);
-console.log(`Promedio de edades: ${promedio_edades}`);
+console.log('Menores de edad: ' + menores_de_edad);
+console.log('Mayores de edad: ' + mayores_de_edad);
+console.log('Adultos mayores: ' + adultos_mayores);
+console.log('Edad más baja: ' + edad_mas_baja);
+console.log('Edad más alta: ' + edad_mas_alta);
+console.log('Promedio de edades: ' + promedio_edades);
 
